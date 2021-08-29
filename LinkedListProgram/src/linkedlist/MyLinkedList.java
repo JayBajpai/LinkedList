@@ -3,6 +3,7 @@ package linkedlist;
 public class MyLinkedList {
 		public INode head;
 		public INode tail;
+		
 		public MyLinkedList() {
 			this.head = null;
 			this.tail = null;
@@ -19,7 +20,7 @@ public class MyLinkedList {
 				this.head = newNode;
 				this.head.setNext(tempNode);
 			}
-		}
+		}	
 		public void printNodes(){
 			StringBuffer myNodes = new StringBuffer("My Nodes : ");
 			INode tempNode = head;
@@ -31,6 +32,7 @@ public class MyLinkedList {
 			myNodes.append(tempNode.getKey());
 			System.out.println(myNodes);
 		}
+
 		public void append(INode newNode) {
 			// TODO Auto-generated method stub
 			if(this.head == null) {
@@ -44,3 +46,4 @@ public class MyLinkedList {
 			}
 		}
 	}
+
