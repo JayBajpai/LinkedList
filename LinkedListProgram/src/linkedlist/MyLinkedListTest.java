@@ -1,13 +1,13 @@
 package linkedlist;
 
 import static org.junit.Assert.*;
+
 import org.junit.Assert;
 import org.junit.Test;
 
 public class MyLinkedListTest {
-
 	@Test
-		public void threeNumbersAddedToTop() {
+	public void threeNumbersAddedToTop() {
 			MyNode <Integer> myFirstNode = new MyNode<>(70);
 			MyNode <Integer> mySecondNode = new MyNode<>(30);
 			MyNode <Integer> myThirdNode = new MyNode<>(56);
@@ -15,8 +15,7 @@ public class MyLinkedListTest {
 			
 			myLinkedList.add(myFirstNode);
 			myLinkedList.add(mySecondNode);
-			myLinkedList.add(myThirdNode);
-
+			myLinkedList.add(myThirdNode);	
 			myLinkedList.printNodes();
 			boolean result = myLinkedList.head.equals(myThirdNode) && 
 					         myLinkedList.head.getNext().equals(mySecondNode)  && 
