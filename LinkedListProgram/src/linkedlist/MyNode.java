@@ -1,9 +1,9 @@
 package linkedlist;
 
 public class MyNode<K> implements INode<K> {
-	
 	private K key=null;
 	private INode next=null;
+	
 	public MyNode(K key) {
 		this.key = key;
 		this.next = null;
@@ -23,5 +23,5 @@ public class MyNode<K> implements INode<K> {
 	}
 	public void setNext(INode next) {
 		this.next = (MyNode<K>)next;
-	}
+	}	
 }

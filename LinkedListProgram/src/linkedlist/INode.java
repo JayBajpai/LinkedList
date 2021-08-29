@@ -1,8 +1,8 @@
 package linkedlist;
 
-public interface INode<K> {
+public interface INode<K> {	
 	K getKey();
-	void setKey(K key);
+	void setKey(K key);	
 	INode getNext();
 	void setNext(INode next);
 }
